@@ -1,0 +1,177 @@
+2025-07-28 08:15:23 [INFO] Server started on port 8080
+2025-07-28 08:15:24 [INFO] Database connection established to db-prod-01
+2025-07-28 08:15:25 [INFO] Cache initialized with 1024MB memory limit
+2025-07-28 08:16:12 [INFO] 192.168.1.45 - GET /api/users/123 - 200 - 45ms
+2025-07-28 08:16:15 [INFO] 10.0.0.12 - POST /api/auth/login - 200 - 120ms
+2025-07-28 08:16:18 [DEBUG] Authentication token generated for user_id: 456
+2025-07-28 08:16:22 [INFO] 172.16.0.8 - GET /dashboard - 200 - 78ms
+2025-07-28 08:16:45 [WARN] Rate limit exceeded for IP: 203.0.113.5
+2025-07-28 08:17:01 [INFO] 192.168.1.45 - GET /api/products/search?q=laptop - 200 - 234ms
+2025-07-28 08:17:15 [ERROR] Database query timeout: SELECT * FROM products WHERE category='electronics'
+2025-07-28 08:17:16 [INFO] Retrying database connection...
+2025-07-28 08:17:17 [INFO] Database connection restored
+2025-07-28 08:17:23 [INFO] 10.0.0.15 - POST /api/orders - 201 - 89ms
+2025-07-28 08:17:34 [DEBUG] Order #ORD-2025-001234 created successfully
+2025-07-28 08:17:45 [INFO] 172.16.0.12 - GET /api/inventory/check/item-789 - 200 - 56ms
+2025-07-28 08:18:02 [WARN] Low disk space on /var/log partition: 85% full
+2025-07-28 08:18:15 [INFO] 192.168.1.67 - PUT /api/users/456/profile - 200 - 67ms
+2025-07-28 08:18:23 [INFO] 203.0.113.12 - GET /static/css/main.css - 200 - 12ms
+2025-07-28 08:18:34 [INFO] 10.0.0.8 - GET /api/notifications - 200 - 43ms
+2025-07-28 08:18:45 [DEBUG] Background job 'email_queue_processor' started
+2025-07-28 08:19:01 [INFO] 172.16.0.25 - DELETE /api/sessions/abc123 - 204 - 23ms
+2025-07-28 08:19:12 [ERROR] Failed to send email to user@example.com: SMTP timeout
+2025-07-28 08:19:13 [INFO] Email queued for retry: msg_id_7891
+2025-07-28 08:19:25 [INFO] 192.168.1.89 - GET /api/reports/daily - 200 - 567ms
+2025-07-28 08:19:34 [WARN] Slow query detected: 567ms for reports generation
+2025-07-28 08:19:45 [INFO] 10.0.0.34 - POST /api/feedback - 201 - 78ms
+2025-07-28 08:20:01 [DEBUG] Cache hit rate: 87.3% over last 5 minutes
+2025-07-28 08:20:12 [INFO] 203.0.113.45 - GET /favicon.ico - 200 - 8ms
+2025-07-28 08:20:23 [INFO] 172.16.0.56 - GET /api/weather/current - 200 - 234ms
+2025-07-28 08:20:34 [ERROR] External API call failed: weather service unavailable
+2025-07-28 08:20:35 [INFO] Falling back to cached weather data
+2025-07-28 08:20:45 [INFO] 192.168.1.123 - POST /api/upload - 413 - 12ms
+2025-07-28 08:20:46 [WARN] File upload rejected: size 15MB exceeds 10MB limit
+2025-07-28 08:21:01 [INFO] 10.0.0.67 - GET /api/stats/performance - 200 - 89ms
+2025-07-28 08:21:12 [DEBUG] Memory usage: 78.2% of allocated heap
+2025-07-28 08:21:23 [INFO] 172.16.0.78 - PATCH /api/settings/notifications - 200 - 45ms
+2025-07-28 08:21:34 [INFO] 203.0.113.89 - GET /health - 200 - 5ms
+2025-07-28 08:21:45 [INFO] Scheduled backup started: db_backup_20250728_082145
+2025-07-28 08:22:01 [INFO] 192.168.1.234 - GET /api/users/search?name=john - 200 - 123ms
+2025-07-28 08:22:12 [WARN] Suspicious activity detected from IP: 198.51.100.25
+2025-07-28 08:22:13 [INFO] IP 198.51.100.25 temporarily blocked for 15 minutes
+2025-07-28 08:22:23 [INFO] 10.0.0.89 - POST /api/comments - 201 - 67ms
+2025-07-28 08:22:34 [DEBUG] Comment moderation queue: 12 pending items
+2025-07-28 08:22:45 [INFO] 172.16.0.98 - GET /api/categories - 200 - 34ms
+2025-07-28 08:23:01 [ERROR] Redis connection lost: Connection reset by peer
+2025-07-28 08:23:02 [INFO] Attempting Redis reconnection...
+2025-07-28 08:23:04 [INFO] Redis connection restored
+2025-07-28 08:23:12 [INFO] 203.0.113.123 - GET /robots.txt - 200 - 3ms
+2025-07-28 08:23:23 [INFO] 192.168.1.45 - PUT /api/cart/items/567 - 200 - 78ms
+2025-07-28 08:23:34 [DEBUG] Shopping cart updated for session: sess_abc123def456
+2025-07-28 08:23:45 [INFO] 10.0.0.123 - GET /api/promotions/active - 200 - 89ms
+2025-07-28 08:24:01 [WARN] High CPU usage detected: 89.5% average over 2 minutes
+2025-07-28 08:24:12 [INFO] 172.16.0.134 - DELETE /api/cache/user-456 - 204 - 15ms
+2025-07-28 08:24:23 [INFO] Background job completed: daily_report_generation (245.6s)
+2025-07-28 08:24:34 [INFO] 203.0.113.167 - GET /sitemap.xml - 200 - 67ms
+2025-07-28 08:24:45 [ERROR] Payment gateway error: Invalid merchant ID
+2025-07-28 08:24:46 [INFO] Payment retry scheduled for transaction: txn_789456123
+2025-07-28 08:25:01 [INFO] 192.168.1.178 - POST /api/reviews - 201 - 123ms
+2025-07-28 08:25:12 [DEBUG] Image optimization job queued: img_proc_20250728_082512
+2025-07-28 08:25:23 [INFO] 10.0.0.189 - GET /api/shipping/rates - 200 - 345ms
+2025-07-28 08:25:34 [WARN] Shipping API response time degraded: 345ms (normal: 150ms)
+2025-07-28 08:25:45 [INFO] 172.16.0.198 - GET /api/wishlist/user-789 - 200 - 56ms
+2025-07-28 08:26:01 [INFO] Database backup completed successfully: 2.3GB
+2025-07-28 08:26:12 [INFO] 203.0.113.201 - POST /api/newsletter/subscribe - 201 - 89ms
+2025-07-28 08:26:23 [DEBUG] Email validation passed for: subscriber@domain.com
+2025-07-28 08:26:34 [INFO] 192.168.1.212 - GET /api/analytics/page-views - 200 - 234ms
+2025-07-28 08:26:45 [ERROR] Analytics database query failed: Connection timeout
+2025-07-28 08:26:46 [INFO] Using cached analytics data from 08:20
+2025-07-28 08:27:01 [INFO] 10.0.0.223 - PUT /api/preferences/theme - 200 - 45ms
+2025-07-28 08:27:12 [WARN] Failed login attempt for user: admin (IP: 198.51.100.50)
+2025-07-28 08:27:23 [INFO] 172.16.0.234 - GET /api/search/suggestions?q=phone - 200 - 78ms
+2025-07-28 08:27:34 [DEBUG] Search index updated: 1,247,893 documents
+2025-07-28 08:27:45 [INFO] 203.0.113.245 - GET /api/status - 200 - 8ms
+2025-07-28 08:28:01 [INFO] SSL certificate renewal reminder: expires in 30 days
+2025-07-28 08:28:12 [INFO] 192.168.1.256 - POST /api/contact - 201 - 156ms
+2025-07-28 08:28:23 [DEBUG] Contact form submitted: inquiry_20250728_082823
+2025-07-28 08:28:34 [INFO] 10.0.0.11 - GET /api/faq/search?q=return policy - 200 - 67ms
+2025-07-28 08:28:45 [WARN] CDN cache miss rate increased: 23.4% (normal: 8%)
+2025-07-28 08:29:01 [INFO] 172.16.0.22 - DELETE /api/logs/old - 200 - 1234ms
+2025-07-28 08:29:02 [INFO] Log cleanup completed: 547MB freed
+2025-07-28 08:29:12 [INFO] 203.0.113.33 - GET /api/social/posts/trending - 200 - 189ms
+2025-07-28 08:29:23 [ERROR] Social media API rate limit exceeded
+2025-07-28 08:29:24 [INFO] Social feed update postponed until rate limit reset
+2025-07-28 08:29:34 [INFO] 192.168.1.44 - POST /api/votes - 201 - 78ms
+2025-07-28 08:29:45 [DEBUG] Vote recorded: poll_id_456, user_id_789, option_2
+2025-07-28 08:30:01 [INFO] 10.0.0.55 - GET /api/leaderboard/weekly - 200 - 123ms
+2025-07-28 08:30:12 [WARN] Memory leak detected in module: image_processor
+2025-07-28 08:30:13 [INFO] Restarting image processor service...
+2025-07-28 08:30:15 [INFO] Image processor service restarted successfully
+2025-07-28 08:30:23 [INFO] 172.16.0.66 - PUT /api/subscription/plan - 200 - 234ms
+2025-07-28 08:30:34 [DEBUG] Subscription upgraded: user_789 to premium plan
+2025-07-28 08:30:45 [INFO] 203.0.113.77 - GET /api/languages/supported - 200 - 23ms
+2025-07-28 08:31:01 [ERROR] Translation service timeout for language: zh-CN
+2025-07-28 08:31:02 [INFO] Falling back to cached translations
+2025-07-28 08:31:12 [INFO] 192.168.1.88 - POST /api/bookmarks - 201 - 45ms
+2025-07-28 08:31:23 [DEBUG] Bookmark saved: url='https://example.com/article/123'
+2025-07-28 08:31:34 [INFO] 10.0.0.99 - GET /api/calendar/events/today - 200 - 156ms
+2025-07-28 08:31:45 [WARN] Calendar sync failed for external provider: google
+2025-07-28 08:32:01 [INFO] 172.16.0.110 - DELETE /api/notifications/read - 204 - 34ms
+2025-07-28 08:32:12 [INFO] Notification cleanup completed: 1,456 items processed
+2025-07-28 08:32:23 [INFO] 203.0.113.121 - GET /api/themes/list - 200 - 67ms
+2025-07-28 08:32:34 [DEBUG] Theme cache regenerated: 24 themes available
+2025-07-28 08:32:45 [INFO] 192.168.1.132 - PUT /api/avatar/upload - 200 - 567ms
+2025-07-28 08:33:01 [ERROR] Image upload failed: unsupported format .bmp
+2025-07-28 08:33:02 [WARN] User upload rejected: invalid file type
+2025-07-28 08:33:12 [INFO] 10.0.0.143 - GET /api/metrics/realtime - 200 - 89ms
+2025-07-28 08:33:23 [DEBUG] Active users: 2,847 | Concurrent sessions: 3,421
+2025-07-28 08:33:34 [INFO] 172.16.0.154 - POST /api/feedback/bug-report - 201 - 123ms
+2025-07-28 08:33:45 [WARN] Disk I/O latency increased: 45ms (normal: 12ms)
+2025-07-28 08:34:01 [INFO] 203.0.113.165 - GET /api/export/data/csv - 200 - 2345ms
+2025-07-28 08:34:02 [INFO] Data export completed: 145,678 records
+2025-07-28 08:34:12 [INFO] 192.168.1.176 - PUT /api/security/2fa/enable - 200 - 78ms
+2025-07-28 08:34:23 [DEBUG] 2FA enabled for user_id: 456, method: totp
+2025-07-28 08:34:34 [INFO] 10.0.0.187 - GET /api/integration/slack/status - 200 - 234ms
+2025-07-28 08:34:45 [ERROR] Slack webhook delivery failed: HTTP 500
+2025-07-28 08:34:46 [INFO] Webhook retry scheduled in 5 minutes
+2025-07-28 08:35:01 [INFO] 172.16.0.198 - DELETE /api/temp-files/cleanup - 200 - 876ms
+2025-07-28 08:35:02 [INFO] Temporary files cleaned: 234MB freed
+2025-07-28 08:35:12 [INFO] 203.0.113.209 - GET /api/version - 200 - 12ms
+2025-07-28 08:35:23 [DEBUG] API version: 2.4.1, Build: 20250728-082500
+2025-07-28 08:35:34 [INFO] 192.168.1.220 - POST /api/polls/create - 201 - 145ms
+2025-07-28 08:35:45 [WARN] Poll creation rate exceeded for user_id: 789
+2025-07-28 08:36:01 [INFO] 10.0.0.231 - GET /api/recommendations/user-456 - 200 - 678ms
+2025-07-28 08:36:02 [DEBUG] ML recommendation model: v3.2.1 response time: 678ms
+2025-07-28 08:36:12 [INFO] 172.16.0.242 - PUT /api/privacy/settings - 200 - 56ms
+2025-07-28 08:36:23 [INFO] Privacy settings updated for user_id: 123
+2025-07-28 08:36:34 [INFO] 203.0.113.253 - GET /api/changelog/recent - 200 - 89ms
+2025-07-28 08:36:45 [ERROR] Changelog service unavailable: Circuit breaker open
+2025-07-28 08:36:46 [INFO] Serving cached changelog data
+2025-07-28 08:37:01 [INFO] 192.168.1.14 - POST /api/tags/create - 201 - 67ms
+2025-07-28 08:37:12 [DEBUG] Tag created: 'summer-sale' with color: #FF6B35
+2025-07-28 08:37:23 [INFO] 10.0.0.25 - GET /api/archive/documents/2024 - 200 - 1234ms
+2025-07-28 08:37:24 [WARN] Archive query slow: consider indexing by year
+2025-07-28 08:37:34 [INFO] 172.16.0.36 - DELETE /api/drafts/expired - 204 - 345ms
+2025-07-28 08:37:45 [INFO] Expired drafts cleanup: 67 items removed
+2025-07-28 08:38:01 [INFO] 203.0.113.47 - GET /api/timezone/detect - 200 - 23ms
+2025-07-28 08:38:12 [DEBUG] Timezone detected: Asia/Singapore (+08:00)
+2025-07-28 08:38:23 [INFO] 192.168.1.58 - PUT /api/language/preference - 200 - 45ms
+2025-07-28 08:38:34 [INFO] Language preference updated: en-US -> es-ES
+2025-07-28 08:38:45 [ERROR] Translation cache miss for key: menu.dashboard.es
+2025-07-28 08:38:46 [INFO] Translation requested from service
+2025-07-28 08:39:01 [INFO] 10.0.0.69 - GET /api/help/search?q=password reset - 200 - 123ms
+2025-07-28 08:39:12 [DEBUG] Help search results: 7 articles found
+2025-07-28 08:39:23 [INFO] 172.16.0.80 - POST /api/sessions/refresh - 200 - 78ms
+2025-07-28 08:39:34 [DEBUG] Session refreshed: sess_def456ghi789, expires: 2025-07-28 16:39
+2025-07-28 08:39:45 [INFO] 203.0.113.91 - GET /api/storage/usage - 200 - 156ms
+2025-07-28 08:40:01 [WARN] Storage usage: 78.9GB / 100GB (78.9% full)
+2025-07-28 08:40:12 [INFO] 192.168.1.102 - DELETE /api/attachments/orphaned - 200 - 2345ms
+2025-07-28 08:40:13 [INFO] Orphaned attachments cleaned: 1.2GB freed
+2025-07-28 08:40:23 [INFO] 10.0.0.113 - GET /api/experiments/active - 200 - 89ms
+2025-07-28 08:40:34 [DEBUG] A/B test assignments: user_456 -> variant_B (feature_newui)
+2025-07-28 08:40:45 [INFO] 172.16.0.124 - PUT /api/workflow/status - 200 - 234ms
+2025-07-28 08:41:01 [ERROR] Workflow engine timeout: job_20250728_083845
+2025-07-28 08:41:02 [INFO] Workflow job marked as failed, retry scheduled
+2025-07-28 08:41:12 [INFO] 203.0.113.135 - GET /api/activity/recent - 200 - 67ms
+2025-07-28 08:41:23 [DEBUG] Recent activity: 45 events in last hour
+2025-07-28 08:41:34 [INFO] 192.168.1.146 - POST /api/invitations/send - 201 - 345ms
+2025-07-28 08:41:45 [WARN] Email delivery delay: SMTP queue backed up
+2025-07-28 08:42:01 [INFO] 10.0.0.157 - GET /api/compliance/audit-log - 200 - 567ms
+2025-07-28 08:42:02 [DEBUG] Audit log entries: 15,678 events in last 24h
+2025-07-28 08:42:12 [INFO] 172.16.0.168 - PUT /api/branding/logo - 200 - 123ms
+2025-07-28 08:42:23 [INFO] Brand logo updated: logo_v2_20250728.png
+2025-07-28 08:42:34 [INFO] 203.0.113.179 - GET /api/widgets/dashboard - 200 - 89ms
+2025-07-28 08:42:45 [ERROR] Widget configuration corrupted for user_id: 789
+2025-07-28 08:42:46 [INFO] Resetting to default widget layout
+2025-07-28 08:43:01 [INFO] 192.168.1.190 - DELETE /api/tokens/expired - 204 - 456ms
+2025-07-28 08:43:02 [INFO] Expired tokens cleaned: 1,234 tokens removed
+2025-07-28 08:43:12 [INFO] 10.0.0.201 - GET /api/billing/invoices/pending - 200 - 234ms
+2025-07-28 08:43:23 [DEBUG] Pending invoices: 23 invoices, total: $12,456.78
+2025-07-28 08:43:34 [INFO] 172.16.0.212 - POST /api/automation/rule - 201 - 78ms
+2025-07-28 08:43:45 [WARN] Automation rule limit reached for user_id: 456
+2025-07-28 08:44:01 [INFO] 203.0.113.223 - GET /api/templates/public - 200 - 145ms
+2025-07-28 08:44:12 [DEBUG] Public templates: 67 available, 12 featured
+2025-07-28 08:44:23 [INFO] 192.168.1.234 - PUT /api/profile/bio - 200 - 56ms
+2025-07-28 08:44:34 [INFO] Profile bio updated for user_id: 123
+2025-07-28 08:44:45 [ERROR] Content moderation API timeout
+2025-07-28 08:44:46 [INFO] Bio update pending moderation review
