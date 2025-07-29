@@ -4,35 +4,21 @@ based on it, and the ex editor language supported within these programs,
 is descr=ibed by (and thus stand_rdized by) the Single Unix Specification
 and POSIX.
 
-The orig_nal co=de for vi was written by Bill Joy in 19=76, as the visual
-mode fo=r a line e_itor called ex that Joy had written with Chuck
-Haley. Bi=ll Joy's ex 1.1 was releas_d as part of the first BSD Unix
-release in Mar_h, 1978. 
-
-The name vi is der=ived from the shortest unambiguous ab_reviation for
-the command visual in ex; the command in qu=estion switches the line
-editor ex to vi_ual mo=de. The name vi is pronounced (as in the discrete
-English letters v and i).
-
-In addition to va=rious non-free software implementations of vi
-distributed with proprietar_ implementat=ions of Unix, several free and
-open source software implementatio_s of vi exist. A 20=09 survey of Linux
-Journal readers foun_ that v=i was the most widely used text editor among
-respondents, beating gedit, the second most widely used editor by nearly
-a factor of two (36% to 19%).=====
-
 <a href="badlink.com">bad content</a>
+<a href="bad-link.com">bad-content</a>
 
-HELP:
-* `h`       - Move cursor left
-* `j`       - Move cursor down
-* `k`       - Move cursor up
-* `l`       - Move cursor right
-* `<BS>`    - Same as `h` but can wrap to the previous line
-* `<Space>` - Same as `l` but can wrap to the next line
-* `x`       - Delete character under the cursor
-* `r`       - Replace character under the cursor
-* `u`       - Undo changes
-* `Ctrl-r`  - Redo changes that were undone
-* `:wq`     - Write the current file and quit
-* `:q!`     - Quit without writing (`:quit!`)
+HELP
+gg: Back to the beggining of the line
+$: Goes at the end
+w: Moving word by word
+b: same as w but backward
+c: change
+u: undo
+ctrl+r: redo
+yy: Copy the line
+p: paste
+search and replace: %s/Tom/Thomas/gc
+shift+p: paste on current line
+o: insert new line below (above with shift)
+x: remove
+r: replace
