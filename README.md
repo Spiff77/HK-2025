@@ -1,5 +1,9 @@
 # GCIO HK 2025
 
+## Axios cdn
+To place in the `<head>` tag:     `<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>`
+
+
 ## Project
 ⚠️ [Link to original project description](project_description.md) ⚠️
 
