@@ -7,7 +7,7 @@ To place in the `<head>` tag:     `<script src="https://cdn.jsdelivr.net/npm/axi
 ## Project
  - ⚠️ [Link to original project description](project_description.md) ⚠️
  - [Questions to ask to yourself](questions.md)
- - [Deployment example](git@github.com:Spiff77/music-deploy.git)
+ - [Deployment example](https://github.com/Spiff77/music-deploy)
 
 **Important things to remember:**
 - You need to have the backend in JavaScript (as we learn in the course). The Frontend is in HTML and JavaScript. Use MySQL for the database. You need to do at least one external API call.
